@@ -1,0 +1,24 @@
+.LowerNavBar {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+}
+
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 70px;
+  background-color: #0f0f0f;
+}
+
+.Container p {
+  font-family: "Roboto-Light", Helvetica;
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 20px;
+  margin: 20px;
+}

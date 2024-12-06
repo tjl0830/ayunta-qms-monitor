@@ -1,0 +1,69 @@
+/* CounterRow.module.css */
+.Row {
+  text-align: center;
+}
+
+.Counter,
+.Serving,
+.UpNext {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.Counter {
+  font-weight: bold;
+}
+
+.Serving {
+  background-color: #f0f0f0;
+}
+
+.UpNext {
+  background-color: #d0f0d0;
+}
+
+/* CounterSection.module.css */
+
+.Table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.Header {
+  background-color: #f4f4f4;
+  padding: 12px;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 32px;
+  font-weight: 500;
+  height: 70px;
+}
+
+th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* MainContent.module.css */
+.MainContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.LeftSection,
+.RightSection {
+  width: 50%;
+}

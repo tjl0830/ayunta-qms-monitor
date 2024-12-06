@@ -1,0 +1,19 @@
+.DisplayContainer {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Take up full height of the viewport */
+}
+
+.UpperNavBar,
+.LowerNavBar {
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.MainContainer {
+  flex-grow: 1; /* Allow content to take up remaining space */
+  display: flex;
+  flex-direction: column; /* Ensure content is stacked vertically */
+  justify-content: center; /* Vertically align content */
+  height: calc(100vh - 70px - 70px); /* Calculate available space minus the navbars */
+}
