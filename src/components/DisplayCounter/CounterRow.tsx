@@ -1,19 +1,19 @@
-// CounterRow.tsx
 import React from 'react';
-import styles from './DisplayCounter.module.css'; // Import the CSS Module
+import counterRowStyles from './DisplayCounter.module.css'; // Import the CSS Module for Row
 
 interface CounterRowProps {
   counterNumber: number;
   servingStatus: string;
   upNextStatus: string;
+  servingBoxClass: string; // Accept the serving box class as a prop
 }
 
-const CounterRow: React.FC<CounterRowProps> = ({ counterNumber, servingStatus, upNextStatus }) => {
+const CounterRow: React.FC<CounterRowProps> = ({ counterNumber, servingStatus, upNextStatus, servingBoxClass }) => {
   return (
-    <tr className={styles.Row}>
-      <td className={styles.Counter}>{counterNumber}</td>
-      <td className={styles.Serving}>{servingStatus}</td>
-      <td className={styles.UpNext}>{upNextStatus}</td>
+    <tr className={counterRowStyles.Row}>
+      <td className={counterRowStyles.Counter}>{counterNumber}</td>
+      <td className={`${counterRowStyles.Serving} ${servingBoxClass}`}>{servingStatus}</td> {/* Apply the dynamic class directly to <td> */}
+      <td className={counterRowStyles.UpNext}>{upNextStatus}</td>
     </tr>
   );
 };

@@ -15,18 +15,17 @@
 }
 
 .Serving {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
 }
 
 .UpNext {
-  background-color: #d0f0d0;
+  background-color: #ffffff;
 }
 
 /* CounterSection.module.css */
 
 .Table {
   width: 100%;
-
   border-collapse: collapse;
 }
 
@@ -49,10 +48,6 @@ th {
   font-weight: bold;
 }
 
-tr:hover {
-  background-color: #f1f1f1;
-}
-
 /* MainContent.module.css */
 .MainContent {
   display: flex;
@@ -66,4 +61,20 @@ tr:hover {
 .LeftSection,
 .RightSection {
   width: 50%;
+}
+
+/* DisplayCounter.module.css */
+/* DisplayCounter.module.css */
+.ServingBox {
+  background-color: green; /* Green for serving */
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.NotServingBox {
+  background-color: rgb(255, 255, 255); /* Gray for no one serving */
+  color: white;
+  padding: 10px;
+  font-weight: normal;
 }
